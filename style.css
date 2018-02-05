@@ -1,3 +1,16 @@
-body { font-family:Helvetica, sans-serif; }
-.subtitle { color: #817D7C}
-#masthead {  }
+img {
+  width: 25%;
+  height: 25%;
+}
+
+body {
+  font-size: 24px;
+}
+
+.works {
+  background-color: grey;
+}
+
+#title {
+  color: red;
+}
