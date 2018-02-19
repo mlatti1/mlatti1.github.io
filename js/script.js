@@ -1,8 +1,8 @@
-let oneNumber = 100
-let oneString = ‘hello world’
-let oneBoolean = true
-let oneArray = [‘dogs’, ‘cats’, ‘horse’]
-console.log(oneNumber)
-console.log(oneString)
-console.log(oneBoolean)
-console.log(oneArray)
+let projects = 4
+let desc = 'my portfolio'
+let works = true
+let array = ['first', 'second', 'third', 'fourth']
+console.log(projects)
+console.log(desc)
+console.log(works)
+console.log(array)
