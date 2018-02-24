@@ -24,6 +24,6 @@ true
 
 
 
- concolse.log(Array[1])
+ console.log(Array[1])
  console.log(ValueObject.numbers)
  console.log(ValueObject["numbers"])
