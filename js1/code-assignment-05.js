@@ -5,7 +5,7 @@ let project1 = {
 }
 let project2 = {
   id: 2
-  title: 'Earthquakes'
+  title: 'Earthquakes',
   hasThumbnail: true
 }
 let projects = [
