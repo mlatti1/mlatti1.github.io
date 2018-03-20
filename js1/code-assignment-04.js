@@ -1,5 +1,5 @@
 let ValueObject = {
-  1,
+  1
 words: {'astros', 'shamrock', 'apple'},
 numbers: {56},
 boolean: {false}
