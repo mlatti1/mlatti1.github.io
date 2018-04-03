@@ -1,4 +1,4 @@
-let mapone = L.map('mapone').setView([13, -.01], 9);
+let mapone = L.map('mapone').setView([13, -.01], 5);
 L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(mapone);
 let markerone = L.marker([14, 14]).addTo(mapone);
 let polygonone = L.polygon([
@@ -13,9 +13,9 @@ function logCurser (event) {
 };
 baseMap.on('Click.', logCurser);
 var polylineone = [
-    [14, -21],
-    [1, 2],
-    [4, 5]
+    [100, -21],
+    [54, 21],
+    [31, 12]
 ];
 var polylineone = L.polyline(polylineone, {color: 'red'}).addTo(mapone);
 mapone.fitBounds(polylineone.getBounds());
