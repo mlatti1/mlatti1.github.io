@@ -1,6 +1,6 @@
 let ValueObject = {
   1
-words: {'astros', 'shamrock', 'apple'},
+words: {'astros', 'shamrock', 'apple'}
 numbers: {56},
 boolean: {false}
 url: 'https://mlatti1.github.io/',
