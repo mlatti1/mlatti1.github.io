@@ -7,6 +7,8 @@ grayBasemap.addTo(mymap)
 let satelliteUrl = 'https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png'
 let satelliteBasemap = L.titleLayer(satelliteUrl)
 
+let blueBasemapUrl = ''
+let blueBasemap = L.titleLayer(blue)
 
 let myBasemaps = {
   'Light basemap' : grayBasemap,
