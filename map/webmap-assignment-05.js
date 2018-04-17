@@ -1,24 +1,26 @@
-let mymap = L.map('map5').setView([39, -98], 4)
-
-let grayBasemapUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-let grayBasemap = L.titleLayer(grayBasemapUrl)
-grayBasemap.addTo(mymap)
-
-let satelliteUrl = 'https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png'
-let satelliteBasemap = L.titleLayer(satelliteUrl)
-
-let blueBasemapUrl = ''
-let blueBasemap = L.titleLayer(blue)
-
-let myBasemaps = {
-  'Light basemap' : grayBasemap,
-  'Satellite' : satelliteBasemap
+let basetwo = L.map('mapthree').setView([31, -90], 8);
+let lay1 = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png').addTo(basetwo);
+let lay2 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+let lay3 = L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png');
+let lays = {
+  'basic': lay1,
+  'gray': lay2,
+  'sat': lay3
 }
-
-let myControlOptions = {
-  collapsed: false
+L.control.layers(lays).addTo(basetwo)
+L.geoJSON(mygeojson).addTo(basetwo)
+let style = {
+  color: 'red',
+  weight: 3,
+  dashArray: '3',
+  fillOpacity: 0.
 }
-
-let opLayers = {}
-
-L.control.layers(myBasemaps, opLayers, myControlOptions).addTo(mymap)
+let options = {
+ style: style,
+ onEachFeature: geopopup
+}
+L.geoJson(mygeojson, options).addTo(basetwo);
+function geopopup (feature, layer) {
+ let id = feature.properties.Industrial_Area_No
+ layer.bindPopup(id)
+}
