@@ -1,0 +1,13 @@
+#mlbmap {
+  height: 500px;
+  width: 75%;
+}
+body {
+  background-color: grey;
+}
+.nle {color: red}
+.ale {color: blue}
+.nlc {color: yellow}
+.alc {color: green}
+.nlw {color: purple}
+.alw {color: orange}
